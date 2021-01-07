@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/basswoman/site#readme",
   "dependencies": {
+    "csound-wasm": "^6.15.0-5",
     "webpack": "^5.11.1"
   },
   "devDependencies": {

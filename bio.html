@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>ksenia</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- You MUST include jQuery before Fomantic -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
-</head>
+  </head>
+  <body>
+    <h5>Click Start realtime once, gotta love chrome's new autoplay ban policy</h5>
+    <button id="start">Start realtime</button>
+    <button id="beeper">Make beep!</button>
+    <script src="https://github.com/hlolli/csound-wasm/releases/download/6.15.0-5/csound-wasm-browser.js" />
+    <script src='js/CsoundObj.js'></script>
+    <script   src="https://github.com/hlolli/csound-wasm/releases/download/6.15.0-5/csound-wasm-browser.js" /><script>
+    const beeper = `
+    instr 1
+    asig = poscil:a(0.3, 440)
+    outc asig, asig
+    endin
+    `
+    document.getElementById('start').onclick = () => {
+        csound.startRealtime();
+        csound.compileOrc(beeper);
+    };
 
-<body class="ui container">
-    <div class="ui secondary menu">
-
-        <a class="item" href="index.html">Home</a>
-
-        <a class="active item" href="bio.html">Bio</a>
-
-        <div class="right menu">
-
-            <div class="item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search link icon"></i>
-                </div>
-            </div>
-
-            <a class="ui item">Logout</a>
-        </div>
-
-    </div>
-    <p>
-        About me:
-    </p>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    document.getElementById('beeper').onclick = () => {
+        csound.inputMessage('i 1 0 1');
+    }
+  </script>
 </body>
-
 </html>

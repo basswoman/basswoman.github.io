@@ -1,17 +1,27 @@
-/* 
 
-body.container {
-    color: red;    
+ul {
+    margin: 4em 0;
+} 
+
+.main-menu {
+
+}
+.main-menu li {
+    display: block;
+    line-height: 40px;
+}
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Arial W01 Bold903304';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    transition: all 0.7s ease-in-out 0.2s;
+
+}
+.main-menu a:hover {
+    background: transparent;
+    color: white;
 }
 
-.title {
- font-family: Verdana,sans-serif;
-}
-
-.blue {
-    color:  blue;
-}
-
-.green {
-    color:  green;
-} */

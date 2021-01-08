@@ -1,3 +1,4 @@
+/******/ (() => { // webpackBootstrap
 console.log('main.js');
 console.log(Module);
 
@@ -51,3 +52,6 @@ $(() => {
     });
 });
 
+
+/******/ })()
+;

@@ -1,64 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
 
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Ksenia Vasileva music portfolio">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>ksenia</title>
     <link rel="stylesheet" href="styles/main.css">
-
+    <script src="dist/main.js"></script>
+    
     <!-- You MUST include jQuery before Fomantic -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css"> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script> -->
 </head>
 
 <!-- <body class="ui container"> -->
     <body>
-    <nav>
+
+    <nav role="navigation" aria-label="main menu">
         <ul class="main-menu">
-
             <li><a class="active item" href="index.html">Home</a></li>
-
             <li><a class="item" href="bio.html">Bio</a></li>
-
             <li><a class="item" href="csound.html">Csound</a></li>
          </ul>
     </nav>
-
+    <div>
     <h3 class="title">My Csound Project</h3>
-    <iframe 
-        id="inlineFrameExample"
-        width="600"
-        height="400"
-        frameborder="0" 
-        src="https://ide.csound.com/profile/Ksenia">
-    </iframe>
-    <h3 class="title">My Sound Replacement project</h3>
-    <iframe 
-        <iframe width="600" 
-        height="400" 
-        src="https://www.youtube.com/embed/3ggFThMATzk" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>   
-    </iframe>
-    <h3 class="title">My Ambient Music</h3>
-    <iframe 
-        style="border: 0; width: 400px; height: 274px;" 
-        src="https://bandcamp.com/EmbeddedPlayer/album=1348326211/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" 
-        seamless><a 
-        href="https://kseniia.bandcamp.com/album/ambient">Ambient by Kseniia</a>
-    </iframe>
-    <h3 class="title">My Microtonal Music</h3>
-    <iframe 
-        style="border: 0; width: 400px; height: 307px;" 
-        src="https://bandcamp.com/EmbeddedPlayer/album=4063065433/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" 
-        seamless><a 
-        href="https://kseniia.bandcamp.com/album/microtonal">Microtonal by Kseniia</a>
-    </iframe>
+        <iframe 
+            id="inlineFrameExample"
+            width="600"
+            height="400"
+            frameborder="0" 
+            src="https://ide.csound.com/profile/Ksenia">
+        </iframe>
+    </div>
+
+    <div>
+        <h3 class="title">My Sound Replacement project</h3>
+        <iframe 
+            iframe width="600" 
+            height="400" 
+            src="https://www.youtube.com/embed/3ggFThMATzk" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>   
+        </iframe>
+    </div>
+
+
+    <div class="leftcolumn">
+        <h3 class="title">My Ambient Music</h3>
+        <iframe 
+            style="border: 0; width: 400px; height: 274px;" 
+            src="https://bandcamp.com/EmbeddedPlayer/album=1348326211/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" 
+            seamless><a 
+            href="https://kseniia.bandcamp.com/album/ambient">Ambient by Kseniia</a>
+        </iframe>
+    </div>
+    <div class="rightcolumn">
+        <h3 class="title">My Microtonal Music</h3>
+        <iframe 
+            style="border: 0; width: 400px; height: 307px;" 
+            src="https://bandcamp.com/EmbeddedPlayer/album=4063065433/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" 
+            seamless><a 
+            href="https://kseniia.bandcamp.com/album/microtonal">Microtonal by Kseniia</a>
+        </iframe>
+    </div>
+    
+    <form class="form">
+        <label for="name">Name</label><br>
+        <input name=“name” type=“text” id=“name” class="field"></input><br>
+        <label for=“textarea>Text Area</label><br>
+        <textarea id=“textarea” name=“textarea cols=“30” rows=“10”></textarea><br>          
+        <button>Send</button>
+    </form>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="dist/main.js"></script>
+    
+    <footer>
+        <h5> Alright s reversed </h4>
+    </footer>
 </body>
 
 </html>

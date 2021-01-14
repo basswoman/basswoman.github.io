@@ -1,6 +1,6 @@
 ### Git   
 to check current path `pwd`.      
-`cd /Users/kseniavasileva/Desktop/SITE`.  
+`cd /Volumes/Storage/SITE`.  
 Run `npm run build`    
 to check status (what changed and ready for commit) `git status`.      
 to add changed files to the next commit (to stage) `git add .`.      

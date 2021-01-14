@@ -1,6 +1,7 @@
 ### Git   
 to check current path `pwd`.      
-`cd /Users/kseniavasileva/Desktop/SITE`.      
+`cd /Users/kseniavasileva/Desktop/SITE`.  
+Run `npm run build`    
 to check status (what changed and ready for commit) `git status`.      
 to add changed files to the next commit (to stage) `git add .`.      
 to commit `git commit -m "bla bla"`.     
@@ -8,9 +9,12 @@ to push to gihub `git push`.
 
 
 ### Webserver
-To Start `npm start`.      
+To Start 
+ npm run browser-sync
+ npm run watch
 Local address: http://localhost:9000
 
 
 ### Github Pages Adress.     
 https://basswoman.github.io/site/
+

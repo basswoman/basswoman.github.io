@@ -1,7 +1,8 @@
 ### Git   
 to check current path `pwd`.      
 `cd /Volumes/Storage/SITE`.  
-Run `npm run build`    
+Run `npm run build`  
+`npm start`.
 to check status (what changed and ready for commit) `git status`.      
 to add changed files to the next commit (to stage) `git add .`.      
 to commit `git commit -m "bla bla"`.     

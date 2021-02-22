@@ -1,6 +1,7 @@
 import React from 'react';
 import {default as CSound} from '@kunstmusik/csound';
 import generative1 from './projects/generative1.csd';
+import notelist1 from './projects/notelist1.csd';
 
 class CSoundComponent extends React.Component {
     constructor(props) {
@@ -75,15 +76,15 @@ class CSoundComponent extends React.Component {
                 {'CSoundComponent'}
                 <h2>My Csound Projects</h2>
                 <h3>Project 1</h3>
-                <p>This is an endless generative piece of creepy music</p>
+                <p>This is an endless generative piece of creepy music!</p>
                 {this.state.csoundInitialized 
                     ? (
                         <div>
                             CSOUND INITIALIZED, you can load project now
                             <br />
                             <a href="#" onClick={this.handleProjectClick('project 1')}>LOAD 1</a><br />
-                            <a href="#" onClick={this.handleProjectClick('project 2')}>LOAD 2</a><br />
-                            <a href="#" onClick={this.handleProjectClick('project 3')}>LOAD 3</a><br />
+                            {/*<a href="#" onClick={this.handleProjectClick('project 2')}>LOAD 2</a><br />*/}
+                            {/*<a href="#" onClick={this.handleProjectClick('project 3')}>LOAD 3</a><br />*/}
                         </div>
                     )
                     : <div>Csound Initializing do not touch shit</div>

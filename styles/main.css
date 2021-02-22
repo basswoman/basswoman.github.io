@@ -1,6 +1,6 @@
 body {
     color: #525252;
-    font-family: Helvetica;
+    font-family: Helvetica, Sans-Serif;
     margin-left: 80px;
     letter-spacing: 0.02em;
     font-size: 14px;
@@ -11,7 +11,7 @@ body {
 
 h3 {
     color: #525252;
-    font-family: Helvetica;
+    font-family: Helvetica, Sans-Serif;
    
     letter-spacing: 0.02em;
     font-size: 18px;
@@ -21,7 +21,7 @@ h3 {
 
 h4 {
     color: #525252;
-    font-family: Helvetica;
+    font-family: Karla, Helvetica, Sans-Serif;
     letter-spacing: 0.02em;
     font-size: 14px;
     text-decoration: none;

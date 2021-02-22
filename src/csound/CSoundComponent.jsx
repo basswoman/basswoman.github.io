@@ -1,7 +1,6 @@
 import React from 'react';
 import {default as CSound} from '@kunstmusik/csound';
 import generative1 from './projects/generative1.csd';
-import notelist1 from './projects/notelist1.csd';
 
 class CSoundComponent extends React.Component {
     constructor(props) {
@@ -74,7 +73,7 @@ class CSoundComponent extends React.Component {
         return (
             <div>
                 {'CSoundComponent'}
-                <h2>My Csound Projects</h2>
+                <h3>Csound Projects</h3>
                 <h3>Project 1</h3>
                 <p>This is an endless generative piece of creepy music!</p>
                 {this.state.csoundInitialized 

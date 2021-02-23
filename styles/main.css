@@ -74,3 +74,37 @@ ul {
 .item {
     font-weight: bold;
 }
+
+button {
+            color: rgba(255, 255, 255, 1);
+            font-size: 24px;
+            font-weight: 100;
+            font-family: Helvetica;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(47, 79, 79);
+            border: none;
+            transition: all .3s;
+            cursor: pointer;
+            border-radius: 7px;
+            display: block;
+            margin: 5px;
+            outline: none;   
+
+        }
+        button:hover {
+            background-color: rgb(27, 54, 54);
+        }
+        button:active {
+            transform: scale(.95);
+        }
+
+        .grid-container {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 20px;
+            align-items: center;
+}
+      
+    </style>

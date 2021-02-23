@@ -44,7 +44,7 @@ class CSoundComponent extends React.Component {
     handleProjectClick(projectId) {
         return () => {
             console.log('i am pressed', projectId);
-            // console.log(generative1);
+            console.log(generative1);
 
             this.setState({
                 loadedProject: projectId
@@ -72,25 +72,27 @@ class CSoundComponent extends React.Component {
     render() {
         return (
             <div>
-                {'CSoundComponent'}
-                <h3>Csound Projects</h3>
-                <h3>Project 1</h3>
-                <p>This is an endless generative piece of creepy music!</p>
+               
+                <h3>Csound Project</h3>
+            
+                <p>This is an endless generative piece of creepy music</p>
                 {this.state.csoundInitialized 
                     ? (
                         <div>
-                            CSOUND INITIALIZED, you can load project now
-                            <br />
-                            <a href="#" onClick={this.handleProjectClick('project 1')}>LOAD 1</a><br />
+                            <p>Press Load and then Play</p>
+                            
+                          <p><a href="#" onClick={this.handleProjectClick('project 1')}>Load</a></p>
                             {/*<a href="#" onClick={this.handleProjectClick('project 2')}>LOAD 2</a><br />*/}
                             {/*<a href="#" onClick={this.handleProjectClick('project 3')}>LOAD 3</a><br />*/}
                         </div>
                     )
                     : <div>Csound Initializing do not touch shit</div>
                 }
-                <a href="#" onClick={this.handleToggleClick('project 3')}>Play</a><br />
+                <p><a href="#" onClick={this.handleToggleClick('project 3')}>Play</a></p>
                 <div>{JSON.stringify(this.state)}</div>
             </div>
+
+            
         );
     }
 

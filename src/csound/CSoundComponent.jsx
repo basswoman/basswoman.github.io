@@ -71,14 +71,19 @@ class CSoundComponent extends React.Component {
 
     render() {
         return (
+           
             <div>
-               
+                <h2>Ksenia Vasileva</h2> 
+                <h3>Musician, bass player, performer, sound designer</h3>
+                <h3>--------------------------------------------------</h3> 
+                <a class="item" href="index.html">back to main</a>
+
                 <h3>Csound Project</h3>
             
                 <p>This is an endless generative piece of creepy music</p>
                 {this.state.csoundInitialized 
                     ? (
-                        <div>
+                <div>
                             <p>Press Load and then Play</p>
                             
                           <p><a href="#" onClick={this.handleProjectClick('project 1')}>Load</a></p>

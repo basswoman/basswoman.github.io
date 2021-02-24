@@ -98,6 +98,24 @@ button {
         button:active {
             transform: scale(.95);
         }
+
+        .drum {
+            color: rgba(255, 255, 255, 1);
+            font-size: 24px;
+            font-weight: 100;
+            font-family: Helvetica;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(47, 79, 79);
+            border: none;
+            transition: all .3s;
+            cursor: pointer;
+            border-radius: 7px;
+            display: block;
+            margin: 5px;
+            outline: none;   
+        }
+        
         .pressed {
             transform: scale(.90);
         }

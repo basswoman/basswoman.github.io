@@ -15,59 +15,156 @@
         <hr>
     </div>
     <p><a class="item" href="index.html">back to main</a>
-       
-        
-</head>
+    
+    <h3 class="main-menu">Bike Kit</h3>
+    <h4 class="main-menu">Drum kit made of sampled bicycle</h4>
 
-<body>
     <div class="grid-container">
-    <button>B</button>
-    <button>I</button>
-    <button>K</button>
-    <button>E</button>
-    <button>b</button>
-    <button>i</button>
-    <button>k</button>
-    <button>e</button>
-    <button>BB</button>
-    <button>II</button>
-    <button>KK</button>
-    <button>EE</button>
-    <button>bb</button>
-    <button>ii</button>
-    <button>kk</button>
-    <button>ee</button>
+        <button class="q drum" id="w">q</button>
+        <button class="w drum" id="a">w</button>
+        <button class="e drum" id="s">e</button>
+        <button class="r drum" id="d">r</button>
+        <button class="t drum" id="j">t</button>
+        <button class="a drum" id="k">k</button>
+        <button class="s drum" id="s">s</button>
+        <button class="d drum" id="d">d</button>
+        <button class="f drum" id="f">f</button>
+        <button class="g drum" id="g">g</button>
+        <button class="z drum" id="z">z</button>
+        <button class="x drum" id="x">x</button>
+        <button class="c drum" id="c">c</button>
+        <button class="v drum" id="v">v</button>
+        <button class="b drum" id="b">b</button>
     </div>
 
     <script>
-        let sound = new Audio('Clap.aif');
-        let B = document.querySelector("button")
+       var drumButtons = document.querySelectorAll(".drum").length;
 
-        BTN1.addEventListener('mousedown', function () {
-            sound.playbackRate = 1;
-            sound.volume = 1;
-            sound.play();
-        });
+        //Using for loop to loop through 6 buttons to run mouseClick function in every iters
+        for (var i = 0; i < drumButtons; i++) {
+
+            document.querySelectorAll(".drum")[i].addEventListener("click", mouseClick);
+        }
+
+        //This function will call makeSound function to play sound by mouse clicks
+        function mouseClick() {
+            //"this" objects is from the .drum classes called from the for loop. Reference: https://www.w3schools.com/js/js_this.asp
+            var buttonInnerHTML = this.innerHTML;
+            //call makeSound function and use buttonInnerHTML as argument. 
+            makeSound(buttonInnerHTML);
+            //call buttonAnimation function to add animation while clicking mouse
+            buttonAnimation(buttonInnerHTML);
+        }
+
+        //add event listener to all document. use "keydown" keyword to detect a keydown from keyboard and run keyStroke function
+        document.addEventListener("keydown", keyStrock);
+
+        //keyStroke function call makeSound function and use event parameter which is colect whenever a key is press down 
+        function keyStrock(event) {
+            //passing event.key argument to makeSound function, this argument is used to detect keystroke event and pass key parameter from makeSound 
+            makeSound(event.key);
+            //call buttonAnimation function to add animation while pressing keys
+            buttonAnimation(event.key);
+        }
+
+        //this function will pair each sound to a specific key/ button using switch statement
+        function makeSound(key) {
+
+            switch (key) {
+                case "q":
+                    var crash = new Audio("Kick.wav"); s
+                    crash.play();
+                    break;
+
+                case "w":
+                    var kick = new Audio("space.wav");
+                    kick.play();
+                    break;
+
+                case "e":
+                    var snare = new Audio("sounds/snare.mp3");
+                    snare.play();
+                    break;
+
+                case "r":
+                    var tom1 = new Audio("sounds/tom-1.mp3");
+                    tom1.play();
+                    break;
+
+                case "t":
+                    var tom2 = new Audio("sounds/tom-2.mp3");
+                    tom2.play();
+                    break;
+
+                case "a":
+                    var tom3 = new Audio("sounds/tom-3.mp3");
+                    tom3.play();
+                    break;
+
+                case "s":
+                    var tom4 = new Audio("sounds/tom-4.mp3");
+                    tom4.play();
+                    break;
+
+                case "d":
+                    var tom1 = new Audio("sounds/tom-1.mp3");
+                    tom1.play();
+                    break;
+
+                case "f":
+                    var tom2 = new Audio("sounds/tom-2.mp3");
+                    tom2.play();
+                    break;
+
+                case "g":
+                    var tom3 = new Audio("sounds/tom-3.mp3");
+                    tom3.play();
+                    break;
+
+                case "z":
+                    var tom4 = new Audio("sounds/tom-4.mp3");
+                    tom4.play();
+                    break;
+
+                case "x":
+                    var tom1 = new Audio("sounds/tom-1.mp3");
+                    tom1.play();
+                    break;
+
+                case "c":
+                    var tom2 = new Audio("sounds/tom-2.mp3");
+                    tom2.play();
+                    break;
+
+                case "v":
+                    var tom3 = new Audio("sounds/tom-3.mp3");
+                    tom3.play();
+                    break;
+
+                case "b":
+                    var tom4 = new Audio("sounds/tom-4.mp3");
+                    tom4.play();
+                    break;
+
+                default:
+                    console.log(buttonInnerHTML);
+            }
+
+        }
+
+        //This function is to add animation to the key/ button while they are pressed/ clicked
+        function buttonAnimation(currentKey) {
+            //get the active button by selecting by key trigged and concatenating with "."
+            var activeButton = document.querySelector("." + currentKey);
+            //add press class to apply the .press class from CSS file
+            activeButton.classList.add("pressed");
+            //built-in function to set time out of an event
+            setTimeout(function () { //anonymous function
+                activeButton.classList.remove("pressed");
+            }, 100); // set time out .1 sec
+        }
     </script>
-<!-- 
-    <script>
-        let sound1 = new Audio('Clap.aif');
-        let BTN1 = document.querySelector("button")
 
-        BTN1.addEventListener('mousedown', notePressed);
-        BTN1.addEventListener('mouseup', noteReleased);
-
-        function notePressed() {
-            sound1.playbackRate = 1.2;
-            sound1.volume = .5;
-            sound1.play();
-        }
-        function noteReleased() {
-            sound1.playbackRate = 1;
-            sound1.volume = 0;
-            sound1.stop()
-        }
-    </script> -->
 
 
 </body>

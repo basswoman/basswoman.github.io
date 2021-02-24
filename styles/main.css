@@ -98,13 +98,16 @@ button {
         button:active {
             transform: scale(.95);
         }
+        .pressed {
+            transform: scale(.90);
+        }
 
         .grid-container {
             justify-content: center;
             display: grid;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: auto auto auto auto auto;
             padding: 20px;
             align-items: center;
 }
       
-    </style>
+  

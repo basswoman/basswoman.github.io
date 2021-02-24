@@ -75,7 +75,7 @@ class CSoundComponent extends React.Component {
             <div>
                 <h2>Ksenia Vasileva</h2> 
                 <h3>Musician, bass player, performer, sound designer</h3>
-                <h3>--------------------------------------------------</h3> 
+                <h3>--------------------------------------------------------------------------</h3> 
                 <a class="item" href="index.html">back to main</a>
 
                 <h3>Csound Project</h3>

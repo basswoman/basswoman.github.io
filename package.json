@@ -1,0 +1,40 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "to check current path `pwd` `cd /Users/kseniavasileva/Desktop/SITE` to check status (what changed and ready for commit) `git status` to add changed files to the next commit (to stage) `git add .` to commit `git commit -m \"bla bla\"` to push to gihub `git push`",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --config=webpack.config.js",
+    "start": "webpack serve",
+    "build": "webpack",
+    "browser-sync": "browser-sync start --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basswoman/site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basswoman/site/issues"
+  },
+  "homepage": "https://github.com/basswoman/site#readme",
+  "dependencies": {
+    "csound-wasm": "^6.15.0-5",
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@kunstmusik/csound": "^6.15.0",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.13",
+    "clean-webpack-plugin": "^3.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  }
+}

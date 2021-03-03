@@ -1,0 +1,131 @@
+body {
+    color: #525252;
+    font-family: Helvetica, Sans-Serif;
+    margin-left: 80px;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    text-decoration: none;
+}
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+h3 {  
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 4em 0;
+} 
+
+
+.main-menu li {
+    display: block;
+    line-height: 40px;
+}
+.main-menu a {
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: Arial W01 Bold903304;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    transition: all 0.7s ease-in-out 0.2s;
+}
+.main-menu a:hover {
+    background: transparent;
+    color: white;
+}
+ 
+
+.title {
+    letter-spacing: 1px;
+    font-size: 20px; 
+}
+
+.leftcolumn {   
+  float: left;
+  width: 50%;
+
+}
+
+.rightcolumn {
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.item {
+    font-weight: bold;
+}
+
+button {
+            color: rgba(255, 255, 255, 1);
+            font-size: 24px;
+            font-weight: 100;
+            font-family: Helvetica;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(47, 79, 79);
+            border: none;
+            transition: all .3s;
+            cursor: pointer;
+            border-radius: 7px;
+            display: block;
+            margin: 5px;
+            outline: none;   
+
+        }
+        button:hover {
+            background-color: rgb(27, 54, 54);
+        }
+        button:active {
+            transform: scale(.95);
+        }
+
+        .drum {
+            color: rgba(255, 255, 255, 1);
+            font-size: 24px;
+            font-weight: 100;
+            font-family: Helvetica;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(47, 79, 79);
+            border: none;
+            transition: all .3s;
+            cursor: pointer;
+            border-radius: 7px;
+            display: block;
+            margin: 5px;
+            outline: none;   
+        }
+        
+        .pressed {
+            transform: scale(.90);
+        }
+
+        .grid-container {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            padding: 20px;
+            align-items: center;
+}
+      
+  

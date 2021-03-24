@@ -1,10 +1,15 @@
 body {
     color: #525252;
     font-family: Helvetica, Sans-Serif;
-    margin-left: 80px;
+    margin-left: 40px;
     letter-spacing: 0.02em;
     font-size: 14px;
     text-decoration: none;
+}
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 40px;
 }
 h2 {
     font-size: 20px;
@@ -127,5 +132,35 @@ button {
             padding: 20px;
             align-items: center;
 }
+
+
+.container {
+  position: relative;
+}
+
+.topright {
+  position: absolute;
+  top: 0px;
+  right: 66px;
+ 
+}
+.fa {
+  padding: 40px;
+  font-size: 40px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color:  #525252;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
       
   

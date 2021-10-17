@@ -1,8 +1,19 @@
 ### Git   
-to check current path `pwd`.      
-`cd /Volumes/Storage/SITE`.  
-Run `npm run build`  
-`npm start`.
+to check current path `pwd`.  
+
+//`cd /Volumes/Storage/SITE`. 
+
+From the root folder
+`npm install`
+`npm run build`
+`npm run start`
+
+https://nodejs.org/en/
+https://github.com/basswoman/basswoman.github.io
+
+'run start' erases everything that was made by 'run build'
+
+`npm run build`
 to check status (what changed and ready for commit) `git status`.      
 to add changed files to the next commit (to stage) `git add .`.      
 to commit `git commit -m "bla bla"`.     

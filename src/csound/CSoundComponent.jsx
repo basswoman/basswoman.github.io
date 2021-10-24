@@ -80,7 +80,7 @@ class CSoundComponent extends React.Component {
 
                 <h3>Csound Project</h3>
             
-                <p>This is an endless generative piece of creepy music</p>
+                <p>This piece is being generated in real time and will play forevever</p>
                 {this.state.csoundInitialized 
                     ? (
                 <div>

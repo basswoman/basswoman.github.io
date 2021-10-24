@@ -1,7 +1,9 @@
 ### Git   
 to check current path `pwd`.  
 
-//`cd /Volumes/Storage/SITE`. 
+// old `cd /Volumes/Storage/SITE`. 
+
+`cd ~/Documents/GitHub/basswoman.github.io`
 
 From the root folder
 `npm install`

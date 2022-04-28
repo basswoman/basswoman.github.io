@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/basswoman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.basswoman.com
+  * I am basswoman (https://keybase.io/basswoman) on keybase.
+  * I have a public key ASDDE_A9fDevfDOqf-RMrfVIYXVwuUP2RuvAOxxCPiUdLAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c313f03d7c37af7c33aa7fe44cadf548617570b943f646ebc03b1c423e251d2c0a",
+      "host": "keybase.io",
+      "kid": "0120c313f03d7c37af7c33aa7fe44cadf548617570b943f646ebc03b1c423e251d2c0a",
+      "uid": "271bfaf3e193945426815a8fa1b8a119",
+      "username": "basswoman"
+    },
+    "merkle_root": {
+      "ctime": 1651187487,
+      "hash": "e00c628ab44e37ebef434a354ffa4b6f5cab44998628dc09a98aeeb0743e7ea6207cfe8f40845396bc28e9810e9848f09a3def03f444f7c065dc1618332cadb7",
+      "hash_meta": "25dcc9e81ff3b30a3dea48d5d4a5b571a5abb5bc2830a39374aeeb81aa388cb5",
+      "seqno": 22383214
+    },
+    "service": {
+      "entropy": "mqJVAY0qhK1CuL0hGVWDokHc",
+      "hostname": "www.basswoman.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.2"
+  },
+  "ctime": 1651187535,
+  "expire_in": 504576000,
+  "prev": "38198931715b0c3cd32b68b856fed136f5ed2e722526a0f48b6a866b5f3c3a82",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgwxPwPXw3r3wzqn/kTK31SGF1cLlD9kbrwDscQj4lHSwKp3BheWxvYWTESpcCCMQgOBmJMXFbDDzTK2i4Vv7RNvXtLnIlJqD0i2qGa188OoLEIIEg0PfdI7yUadpCTJBQl8FTNxw+6lQ2UjSEB7ZIRDUPAgHCo3NpZ8RAOWai/Ihm+EQ+bssFpmYmhDDRU3ED9xd871kkmKpS5Bk9g6VN8P2Q0HXuMYFqRdleGoBmqnJX/Hk8Y9qJ0+UMCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBIjRudM/j9tPgHS6TNffldgwR99srXILuizVYLSFMBpo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/basswoman
+
+==================================================================

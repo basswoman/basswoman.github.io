@@ -148,15 +148,15 @@ button {
 }
 
 .topright {
-  position: absolute;
+  position: center;
   top: 0px;
-  right: 66px;
+  right: 0px;
   font-size: 20px;
  
 }
 .fa {
-  padding: 40px;
-  font-size: 40px;
+  padding: 7px;
+  font-size: 0px;
   width: 20px;
   text-align: center;
   text-decoration: none;

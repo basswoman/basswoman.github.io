@@ -10,7 +10,7 @@ body {
     letter-spacing: 0.02em;
     font-size: 14px;
     text-decoration: none;
-    
+
 }
 
 h1 {
@@ -149,7 +149,7 @@ button {
 
 .topright {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 66px;
   font-size: 20px;
  
@@ -172,15 +172,16 @@ button {
 
 #header {
     background-color: #ffffff;
-    padding: 15px 0px;
+    padding: 5px 0px;
     color: black;
     text-align: center;
-    font-size: 60px; 
+    font-size: 40px; 
     font-weight: bold;
     position: fixed;
-    top: 0;
+    top: 20px;
     width: 100%;
     transition: 0.2s;
+    opacity: .9;
   
   }
 
